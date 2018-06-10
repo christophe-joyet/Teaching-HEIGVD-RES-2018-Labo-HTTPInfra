@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 	res.send(generateStudents());
 });
 
-//On écoute sur le port 9090
+//On écoute sur le port 3000
 app.listen(3000, function(){
 	console.log("Listen HTTP request on port 9090");
 });
