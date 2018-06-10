@@ -1,4 +1,4 @@
-var Chance = require('chance');
+var Chance = require('chance'); //permet d'utiliser la librairie chance
 var chance = new Chance();
 
 var express = require('express');
@@ -21,9 +21,9 @@ function generateStudents() {
 	 max:10
 	});
 	console.log(numberOfStudents);
-	var students = [];
+	var students = []; //notre tableau d'étudiants qui va se remplir aléatoirement à chaque requête faite
 	for (var i = 0; i < numberOfStudents; ++i) {
-	 var gender = chance.gender();
+	 var gender = chance.gender(); //choisir un genre au hasard 
 	 var birthYear = chance.year({
 		min: 1086,
 		max: 1996
